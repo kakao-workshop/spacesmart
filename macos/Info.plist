@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>local.spacesmart.mac</string>
+<key>CFBundleName</key><string>SpaceSmart</string>
+<key>CFBundleDisplayName</key><string>SpaceSmart</string>
+<key>CFBundleExecutable</key><string>SpaceSmart</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>1.3.0</string>
+<key>CFBundleVersion</key><string>4</string>
+<key>CFBundleIconFile</key><string>SpaceSmart.icns</string>
+<key>LSMinimumSystemVersion</key><string>13.0</string>
+<key>LSUIElement</key><true/>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSBluetoothAlwaysUsageDescription</key><string>SpaceSmart 디스플레이에 PC 사용량·시간·선택한 AI 작업 상태를 전송합니다.</string>
+<key>NSHumanReadableCopyright</key><string>SpaceSmart contributors</string>
+</dict></plist>

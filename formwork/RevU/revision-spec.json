@@ -1,0 +1,352 @@
+{
+  "revision": "U",
+  "roofHeight": 55.9,
+  "roofUnderside": 53.5,
+  "transitionY": 43.09832236375697,
+  "supportWallTop": 53.2,
+  "sensorPCB": {
+    "lux": {
+      "center": [
+        9.8,
+        99.5
+      ],
+      "bottom": 46,
+      "width": 16.5,
+      "depth": 16.5,
+      "rise": 10,
+      "pins": "downward, front edge",
+      "location": "above DC board"
+    },
+    "co2": {
+      "center": [
+        32.6,
+        100.5
+      ],
+      "bottom": 43.2,
+      "width": 21.8,
+      "depth": 13.5,
+      "rise": 10,
+      "pins": "downward, outer/right edge",
+      "rotationXYDegrees": 180,
+      "location": "outermost rear/right bay"
+    }
+  },
+  "wireAllowance": 23,
+  "slotMouthMinGap": 2,
+  "supportSlopeDegrees": 45,
+  "wirePort": {
+    "lux_dc": {
+      "width": 14,
+      "bottom": 25.5,
+      "rectHeight": 11.5,
+      "shoulder": 37,
+      "apex": 44,
+      "totalHeight": 18.5,
+      "roofSlopeDegrees": 45,
+      "centerX": 10.8,
+      "sharedFor": [
+        "lux",
+        "DC"
+      ]
+    },
+    "co2": {
+      "width": 14,
+      "bottom": 25.5,
+      "rectHeight": 11.5,
+      "shoulder": 37,
+      "apex": 44,
+      "totalHeight": 18.5,
+      "roofSlopeDegrees": 45,
+      "centerX": 36.5
+    }
+  },
+  "baseline": "RevT",
+  "units": "mm",
+  "originalFrontUnchanged": true,
+  "originalSlopeDegrees": 27.151208215,
+  "originalOuterCornerRadius": 5,
+  "previousRoofHeight": 45.9,
+  "previousTransitionY": 62.5969201,
+  "overallBounds": [
+    100,
+    110.6600037,
+    65.8332794
+  ],
+  "supportWallRoofGap": 0.3,
+  "pcbNominalThickness": 1.6,
+  "slotWidthAllowance": 0.3,
+  "slotVerticalInsertionPurpose": "Ease insertion around permanent diagonal support; not additional connector length",
+  "thermalInsert": {
+    "removed": true,
+    "reason": "user requested removal of intermediate lux baffle"
+  },
+  "rfSupport": {
+    "footDepth": 6,
+    "footHeight": 2.2,
+    "YL105FootWidth": 34.2,
+    "LD2410FootWidth": 29.9,
+    "outerPostThickness": 1.6,
+    "gussetSlopeDegrees": 45,
+    "fullToeJoinedToFloor": true,
+    "YL105CheekThickness": 2.5
+  },
+  "lowerBase": {
+    "integral": true,
+    "outerGeometryRetained": true,
+    "change": "Strengthened clips with backing stops; removed overhead rear bridge of center cable collar.",
+    "ledStripNominalLength": 134,
+    "adhesivePathLength": 137.423,
+    "diffuserWallFrontMM": 0.8,
+    "diffuserWallLeftMM": 0.8,
+    "diffuserWallRightMM": 0.8,
+    "previousWallMM": 1.4,
+    "rearCableCollar": {
+      "removedBridgeWidth": 18,
+      "openAboveZ": 3.5,
+      "sideLegsRetained": true
+    }
+  },
+  "validation3mfPurpose": "01/03/05 plus reusable09 on one monochrome plate for geometry slicing. Print03 white and01/05 black separately.",
+  "changedPhysicalMeshes": [
+    "main_shell",
+    "base_floor",
+    "separator"
+  ],
+  "topVents": {
+    "count": 15,
+    "width": 1.8,
+    "length": 10,
+    "pitch": 5,
+    "centerX": [
+      -35,
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "creaseY": 43.09832236375697,
+    "startY": 44.09832236375697,
+    "endY": 54.09832236375697,
+    "creaseGap": 1,
+    "roofTopZ": 55.9,
+    "roofThickness": 2.4,
+    "oldCreaseVentsClosed": true,
+    "repairToleranceMM": 0.002
+  },
+  "pendingMeasurementsFile": "pending-measurements.json",
+  "pendingMeasurementsApplied": true,
+  "removedPhysicalMeshes": [],
+  "esp32": {
+    "translation": [
+      0,
+      -2,
+      0
+    ],
+    "pcbCenter": [
+      -23.5,
+      78.55
+    ],
+    "pcbBottom": 18.8,
+    "pcbRearY": 110.3,
+    "pcbRearProtrusionBeyondShell": 0,
+    "outerCableGuard": {
+      "x": -41,
+      "thickness": 1.6,
+      "heightFromTray": 20,
+      "bottomZ": 15,
+      "topZ": 35,
+      "yRange": [
+        46.3,
+        106.06
+      ],
+      "frontUpperLCDHeaderRelief": {
+        "width": 1.64,
+        "depth": 1.15,
+        "center": [
+          -41,
+          46.85
+        ],
+        "bottom": 33.05,
+        "height": 2
+      }
+    },
+    "innerRailStartsY": 60,
+    "reasonForInnerRailStart": "Retain central cable opening without unsupported rail over it",
+    "retainerCenter": [
+      -23.5,
+      106.25
+    ],
+    "retainerSeatClearancePerSide": 0.15,
+    "translationBaseline": "RevT",
+    "retainerShapeUnchanged": true
+  },
+  "sensorTopCableGuide": {
+    "projectionTowardBreadboard": 5,
+    "wallFrontY": 89.2,
+    "frontY": 84.2,
+    "topZ": 53.2,
+    "undersideSlopeDegrees": 45,
+    "roofGap": 0.3
+  },
+  "sensorSlots": {
+    "upperLipChangeZ": -1,
+    "pcbDatumUnchanged": true,
+    "nominalMouthGap": 2,
+    "pcbNominalThickness": 1.6,
+    "rootGapNote": "approximately2mm; lips retain45-degree insertion slope"
+  },
+  "rearUSBNotch": {
+    "type": "open-bottom",
+    "xRange": [
+      -41.5,
+      -6.7
+    ],
+    "width": 34.8,
+    "bottomOpenToShellDatum": 15,
+    "topZ": 44,
+    "note": "Raised to retain existing23mm upward cable keepout behind shifted ESP"
+  },
+  "sensorApertures": {
+    "translation": null,
+    "luxCenter": [
+      8.8,
+      99
+    ],
+    "luxOpening": [
+      8,
+      8
+    ],
+    "co2SlitCentersX": [
+      22.2,
+      26.2,
+      30.2,
+      34.2
+    ],
+    "co2SlitY": 100.5,
+    "co2SlitSize": [
+      1.8,
+      10
+    ],
+    "sensorPCBPositionsUnchanged": true,
+    "opticalSkirtBottom": 51,
+    "previousSkirtBottom": 50,
+    "opticalNote": "Lux opening and skirt moved right2mm from RevT; sensor PCB fixed. Check optical response after assembly.",
+    "luxTranslationFromRevT": [
+      2,
+      0,
+      0
+    ],
+    "co2TranslationFromRevT": [
+      0,
+      0,
+      0
+    ]
+  },
+  "dcBoard": {
+    "size": [
+      12,
+      14,
+      1.6
+    ],
+    "center": [
+      15,
+      100.5
+    ],
+    "pcbBottom": 16.8,
+    "measuredTotalHeight": 4.2,
+    "usbProtrusion": 1,
+    "slidingWidth": 12.3,
+    "insertion": "from rear toward front; before LED base attached",
+    "screwHoles": false,
+    "separateCover": false,
+    "retention": "edge rails + front stops + integral floor spring catch",
+    "rearCatchFaceY": 107.65,
+    "pcbRearY": 107.5,
+    "frontStopBackY": 93.35,
+    "pcbFrontY": 93.5,
+    "catchDepressionToPassPCB": 1.35,
+    "plateSpringThickness": 1.0,
+    "release": "With tray detached, press catch beneath USB down and slide PCB rearward."
+  },
+  "joints": {
+    "lowerToTray": {
+      "count": 4,
+      "centerX": [
+        -45.2,
+        45.2
+      ],
+      "centerY": [
+        60,
+        79
+      ],
+      "armThickness": 1.6,
+      "armWidth": 8,
+      "flatRetentionShoulder": 0.35,
+      "backStopGap": 0.8,
+      "backStopTopZ": 12.8,
+      "rootButtressHeight": 1.1,
+      "slotSize": [
+        2,
+        8.4
+      ],
+      "release": "Cover removed: press clips inward from above tray, lift locally in turn."
+    },
+    "trayToCover": {
+      "count": 4,
+      "centerY": [
+        48,
+        71
+      ],
+      "armThickness": 1.6,
+      "armWidth": 8,
+      "flatRetentionShoulder": 0.45,
+      "backStopGap": 0.8,
+      "rootButtressHeight": 1.1,
+      "catchOverlap": 0.5,
+      "releaseWindow": [
+        8.4,
+        1.65
+      ],
+      "release": "Thin flat tool through side window; press inward and lift one corner in turn."
+    },
+    "couponsFolder": "Fit_Test",
+    "purpose": "Wider/thicker arms, supported roots, travel-limiting backstops and positive retaining shoulders. Physical force and repeated-use life untested."
+  },
+  "date": "2026-10-31",
+  "reusableParts": [
+    "original front",
+    "esp_key"
+  ],
+  "removedUpperFeatures": {
+    "screwBossCenters": [
+      [
+        -44,
+        37
+      ],
+      [
+        44,
+        37
+      ],
+      [
+        -44,
+        96
+      ],
+      [
+        44,
+        86
+      ]
+    ],
+    "frontLCDFrameBottomCrossbar": true,
+    "originalSeparateFrontUnchanged": true
+  }
+}

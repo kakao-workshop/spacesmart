@@ -1,0 +1,138 @@
+[
+  {
+    "id": "57134f88-185c-4650-ad75-96e3272c3515",
+    "name": "02 원본 LCD 전면 · 형상 유지",
+    "file": "02_original_front_optional_black.stl",
+    "material": "black MATTE PLA",
+    "rotationX": 117.151208215,
+    "printBounds": [
+      100.0,
+      52.0,
+      10.0
+    ],
+    "triangles": 2040,
+    "testOnly": false,
+    "relativePath": "STL/02_original_front_optional_black.stl",
+    "sha256": "d8f1e18baa42de0494ca811c71b201d1df82c7bbd55cd74390d23efa23e80f0c",
+    "reprint": false
+  },
+  {
+    "id": "base_floor",
+    "name": "03 RevU 강화 걸쇠 · 배선 칼라 뒤 가로대 제거",
+    "file": "03_integrated_lower_base_white.stl",
+    "material": "white MATTE PLA",
+    "rotationX": 0,
+    "printBounds": [
+      100.0,
+      110.66,
+      17.6
+    ],
+    "triangles": 8722,
+    "testOnly": false,
+    "relativePath": "STL/03_integrated_lower_base_white.stl",
+    "sha256": "ba425f6cadca652aba9c5e0a35d00ef97b4ddd1689629c7d1d817d11cbba89a1",
+    "reprint": true
+  },
+  {
+    "id": "separator",
+    "name": "05 RevU ESP 앞2mm · 지지대 포함 강화 걸쇠",
+    "file": "05_integrated_slot_tray_black.stl",
+    "material": "black MATTE PLA",
+    "rotationX": 0,
+    "printBounds": [
+      100.0,
+      110.66,
+      40.2
+    ],
+    "triangles": 4408,
+    "testOnly": false,
+    "relativePath": "STL/05_integrated_slot_tray_black.stl",
+    "sha256": "a44ac996ff4590504c9303b030406baa410dc4601ea89a5627312f4ddd7e7823",
+    "reprint": true
+  },
+  {
+    "id": "esp_key",
+    "name": "09 RevU ESP32 후면 키 · 앞2mm",
+    "file": "09_esp_retainer_black.stl",
+    "material": "black MATTE PLA",
+    "rotationX": 0,
+    "printBounds": [
+      33.0,
+      2.0,
+      4.0
+    ],
+    "triangles": 28,
+    "testOnly": false,
+    "relativePath": "STL/09_esp_retainer_black.stl",
+    "sha256": "f3c397f36cd4929538b2b39f76e0fa3f5dc3f9487566bf0344e5a7bc30501e3a",
+    "reprint": false
+  },
+  {
+    "id": "main_shell",
+    "name": "01 RevU 조도창+2 · 나사보스/전면 아래 제거 · 강화 잠금",
+    "file": "01_main_body_black.stl",
+    "material": "black MATTE PLA",
+    "rotationX": -90,
+    "printBounds": [
+      100.0,
+      46.683,
+      105.2527
+    ],
+    "triangles": 5344,
+    "testOnly": false,
+    "relativePath": "STL/01_main_body_black.stl",
+    "sha256": "53982e0ec595e6d4b52751c6f12fbb639bae969dd2b86fad59c08db2cf938727",
+    "reprint": true
+  },
+  {
+    "id": "fit_u_lower",
+    "name": "TEST U 조명부 강화 걸쇠",
+    "file": "TEST_01_lower_clip_white.stl",
+    "material": "white MATTE PLA",
+    "rotationX": 0,
+    "printBounds": [
+      9.0,
+      22.0,
+      17.6
+    ],
+    "triangles": 84,
+    "testOnly": true,
+    "relativePath": "Fit_Test/TEST_01_lower_clip_white.stl",
+    "sha256": "348dbc8b9529b4481e51b26cfebcb6de9867351e72caaceba44e7e459b569fcf",
+    "reprint": false
+  },
+  {
+    "id": "fit_u_tray",
+    "name": "TEST U 하판 강화 걸쇠",
+    "file": "TEST_02_tray_clip_black.stl",
+    "material": "black MATTE PLA",
+    "rotationX": 0,
+    "printBounds": [
+      9.0,
+      22.0,
+      14.6
+    ],
+    "triangles": 88,
+    "testOnly": true,
+    "relativePath": "Fit_Test/TEST_02_tray_clip_black.stl",
+    "sha256": "25f754f898686e26d971ad4ca31f89591567e76b7c9e63e2bd05b3fbdd57a340",
+    "reprint": false
+  },
+  {
+    "id": "fit_u_shell",
+    "name": "TEST U 상판 받이",
+    "file": "TEST_03_shell_socket_black.stl",
+    "material": "black MATTE PLA",
+    "rotationX": -90,
+    "printBounds": [
+      4.1,
+      15.0,
+      22.0
+    ],
+    "triangles": 48,
+    "testOnly": true,
+    "relativePath": "Fit_Test/TEST_03_shell_socket_black.stl",
+    "sha256": "79f7063a777e8d781a5c1155f1ff4694911811ffc6929d070f5f83a1b5e7b13c",
+    "reprint": false
+  }
+]

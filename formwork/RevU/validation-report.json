@@ -1,0 +1,46 @@
+{
+  "revision": "U",
+  "date": "2026-10-31",
+  "source": "Official Formwork MCP edits and native saved document; document name metadata updated for packaging",
+  "meshAudit": {
+    "parts": 5,
+    "testCoupons": 3,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "degenerateFaces": 0
+  },
+  "staticCollisions": {
+    "bad": [],
+    "pairs": []
+  },
+  "insertionChecks": {
+    "rigidObstructions": 0,
+    "sampleStepMM": 0.25,
+    "DCIntentionalFlexibleCatchExcludedFromRigidCollisionCheck": true,
+    "elasticFEA": false
+  },
+  "slicing": {
+    "app": "Bambu Studio",
+    "printer": "Bambu Lab A1",
+    "nozzleMM": 0.4,
+    "layerHeightMM": 0.12,
+    "firstLayerMM": 0.2,
+    "supports": false,
+    "parts": [
+      "01",
+      "03",
+      "05",
+      "09 reusable"
+    ],
+    "floatingOrCantileverWarningObserved": false,
+    "totalTimeEstimate": "6h0m",
+    "totalMaterialEstimateG": 125.73,
+    "file": "RevU_A1_0p12_support_off_checked.3mf",
+    "purpose": "monochrome geometry validation, not black/white production layout"
+  },
+  "physicalPrintTest": false,
+  "retentionForceMeasured": false,
+  "fatigueTest": false,
+  "sensorOpticalTest": false,
+  "note": "Fit coupons use actual clip/socket geometry and simplified backing plates; check fit before full print."
+}

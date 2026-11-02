@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>local.spacesmart.bridge</string>
+<key>CFBundleName</key><string>SpaceSmart Bridge</string>
+<key>NSBluetoothAlwaysUsageDescription</key><string>SpaceSmart 디스플레이로 PC 사용량과 AI 작업 상태를 전송합니다.</string>
+</dict></plist>

@@ -1,0 +1,19 @@
+﻿device,pin,rail,condition
+USB-C,V,5V,input
+USB-C,G,GND,input
+ESP32,5Vin,5V,load
+ESP32,GND,GND,common
+ESP32,3V3,3.3V,conditional source; current/thermal validation required
+LCD,VCC,3.3V,conditional: module voltage unverified
+LCD,GND,GND,common
+SCD40,VDD,3.3V,load
+SCD40,GND,GND,common
+VEML7700,VIN,3.3V,load
+VEML7700,GND,GND,common
+LD2410C,VCC,5V,load
+LD2410C,GND,GND,common
+YL-105,VCC input,5V,conditional: verify 5V to 3.3V regulator adapter
+YL-105,GND,GND,common
+Lower base,LED +5V,5V,load
+Lower base,shifter V,3.3V,verify shifter type
+Lower base,GND,GND,common

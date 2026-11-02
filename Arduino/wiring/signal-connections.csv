@@ -1,0 +1,23 @@
+﻿GPIO,destination,pin,route
+12,LCD · 노브 · 버튼 / 9가닥,SCL / SPI CLK,direct; no perfboard
+11,LCD · 노브 · 버튼 / 9가닥,SDA / SPI MOSI,direct; no perfboard
+8,LCD · 노브 · 버튼 / 9가닥,RES,direct; no perfboard
+9,LCD · 노브 · 버튼 / 9가닥,DC,direct; no perfboard
+10,LCD · 노브 · 버튼 / 9가닥,CS,direct; no perfboard
+21,LCD · 노브 · 버튼 / 9가닥,A,direct; no perfboard
+40,LCD · 노브 · 버튼 / 9가닥,B,direct; no perfboard
+41,LCD · 노브 · 버튼 / 9가닥,PUSH,direct; no perfboard
+47,LCD · 노브 · 버튼 / 9가닥,K0,direct; no perfboard
+17,nRF24 + YL-105 / 5가닥,CE,direct; no perfboard
+16,nRF24 + YL-105 / 5가닥,CSN / CS,direct; no perfboard
+14,nRF24 + YL-105 / 5가닥,SCK,direct; no perfboard
+13,nRF24 + YL-105 / 5가닥,MOSI,direct; no perfboard
+15,nRF24 + YL-105 / 5가닥,MISO,direct; no perfboard
+7,LD2410C / 2가닥,TX → ESP RX,direct; no perfboard
+18,LD2410C / 2가닥,RX ← ESP TX,direct; no perfboard
+6,하부 시프터 / 2가닥,DAT → D5,direct; no perfboard
+42,하부 시프터 / 2가닥,CLK → C5,direct; no perfboard
+4,SCD40,SDA,"insulated Y splice near ESP, no perfboard"
+4,VEML7700,SDA,"insulated Y splice near ESP, no perfboard"
+5,SCD40,SCL,"insulated Y splice near ESP, no perfboard"
+5,VEML7700,SCL,"insulated Y splice near ESP, no perfboard"

@@ -1,0 +1,1166 @@
+[
+  {
+    "revision": 13,
+    "id": "57134f88-185c-4650-ad75-96e3272c3515",
+    "name": "02 원본 LCD 전면 · 형상 유지",
+    "visible": true,
+    "locked": false,
+    "color": "#24262b",
+    "report": {
+      "vertexCount": 1024,
+      "faceCount": 2040,
+      "triangleCount": 2040,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        -50,
+        0,
+        14.999999999999996
+      ],
+      "max": [
+        50,
+        32.62775148990741,
+        65.83327940441863
+      ],
+      "dimensions": [
+        100,
+        32.62775148990741,
+        50.83327940441863
+      ],
+      "volume": 9396.763311453948
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "57134f88-185c-4650-ad75-96e3272c3515",
+      "parentId": "main_shell",
+      "attached": true,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "attachmentPose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "parent-local",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "main_shell",
+      "worldReport": {
+        "vertexCount": 1024,
+        "faceCount": 2040,
+        "triangleCount": 2040,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          -50,
+          0,
+          14.999999999999996
+        ],
+        "max": [
+          50,
+          32.62775148990741,
+          65.83327940441863
+        ],
+        "dimensions": [
+          100,
+          32.62775148990741,
+          50.83327940441863
+        ],
+        "volume": 9396.763311453948
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "extrude_borders",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "insert_vertex",
+      "target_weld",
+      "dissolve_edges",
+      "merge_planar_faces",
+      "slice_mesh",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature",
+      "create_part_on_face",
+      "add_part_on_face",
+      "align",
+      "ground",
+      "distribute",
+      "arrange"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 2040,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  },
+  {
+    "revision": 13,
+    "id": "base_floor",
+    "name": "03 RevU 강화 걸쇠 · 배선 칼라 뒤 가로대 제거",
+    "visible": true,
+    "locked": false,
+    "color": "#f4f0e8",
+    "report": {
+      "vertexCount": 4351,
+      "faceCount": 8722,
+      "triangleCount": 8722,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        -50,
+        0,
+        0
+      ],
+      "max": [
+        50,
+        110.66000366210938,
+        17.600000381469727
+      ],
+      "dimensions": [
+        100,
+        110.66000366210938,
+        17.600000381469727
+      ],
+      "volume": 33938.4919067869
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "base_floor",
+      "parentId": null,
+      "attached": false,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "assembly-world",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "base_floor",
+      "worldReport": {
+        "vertexCount": 4351,
+        "faceCount": 8722,
+        "triangleCount": 8722,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          -50,
+          0,
+          0
+        ],
+        "max": [
+          50,
+          110.66000366210938,
+          17.600000381469727
+        ],
+        "dimensions": [
+          100,
+          110.66000366210938,
+          17.600000381469727
+        ],
+        "volume": 33938.4919067869
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "extrude_borders",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "insert_vertex",
+      "target_weld",
+      "dissolve_edges",
+      "merge_planar_faces",
+      "slice_mesh",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature",
+      "create_part_on_face",
+      "add_part_on_face",
+      "align",
+      "ground",
+      "distribute",
+      "arrange"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 8722,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  },
+  {
+    "revision": 13,
+    "id": "separator",
+    "name": "05 RevU ESP 앞2mm · 지지대 포함 강화 걸쇠",
+    "visible": true,
+    "locked": false,
+    "color": "#303239",
+    "report": {
+      "vertexCount": 2180,
+      "faceCount": 4408,
+      "triangleCount": 4408,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        -50,
+        0,
+        13
+      ],
+      "max": [
+        50,
+        110.66000366210938,
+        53.20000076293945
+      ],
+      "dimensions": [
+        100,
+        110.66000366210938,
+        40.20000076293945
+      ],
+      "volume": 36461.29112697436
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "separator",
+      "parentId": null,
+      "attached": false,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "assembly-world",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "separator",
+      "worldReport": {
+        "vertexCount": 2180,
+        "faceCount": 4408,
+        "triangleCount": 4408,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          -50,
+          0,
+          13
+        ],
+        "max": [
+          50,
+          110.66000366210938,
+          53.20000076293945
+        ],
+        "dimensions": [
+          100,
+          110.66000366210938,
+          40.20000076293945
+        ],
+        "volume": 36461.29112697436
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "extrude_borders",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "insert_vertex",
+      "target_weld",
+      "dissolve_edges",
+      "merge_planar_faces",
+      "slice_mesh",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature",
+      "create_part_on_face",
+      "add_part_on_face",
+      "align",
+      "ground",
+      "distribute",
+      "arrange"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 4408,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  },
+  {
+    "revision": 13,
+    "id": "esp_key",
+    "name": "09 RevU ESP32 후면 키 · 앞2mm",
+    "visible": true,
+    "locked": false,
+    "color": "#303239",
+    "report": {
+      "vertexCount": 16,
+      "faceCount": 28,
+      "triangleCount": 28,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        -40,
+        105.24999694824218,
+        16.600000381469727
+      ],
+      "max": [
+        -7,
+        107.24999694824218,
+        20.600000381469727
+      ],
+      "dimensions": [
+        33,
+        2,
+        4
+      ],
+      "volume": 124.80002212524415
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "esp_key",
+      "parentId": "separator",
+      "attached": true,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "attachmentPose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "parent-local",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "separator",
+      "worldReport": {
+        "vertexCount": 16,
+        "faceCount": 28,
+        "triangleCount": 28,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          -40,
+          105.24999694824218,
+          16.600000381469727
+        ],
+        "max": [
+          -7,
+          107.24999694824218,
+          20.600000381469727
+        ],
+        "dimensions": [
+          33,
+          2,
+          4
+        ],
+        "volume": 124.80002212524415
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "extrude_borders",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "insert_vertex",
+      "target_weld",
+      "dissolve_edges",
+      "merge_planar_faces",
+      "slice_mesh",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature",
+      "create_part_on_face",
+      "add_part_on_face",
+      "align",
+      "ground",
+      "distribute",
+      "arrange"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 28,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  },
+  {
+    "revision": 13,
+    "id": "main_shell",
+    "name": "01 RevU 조도창+2 · 나사보스/전면 아래 제거 · 강화 잠금",
+    "visible": true,
+    "locked": false,
+    "color": "#25272b",
+    "report": {
+      "vertexCount": 2514,
+      "faceCount": 5344,
+      "triangleCount": 5344,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        -50,
+        5.407341480255127,
+        15
+      ],
+      "max": [
+        50,
+        110.66000366210938,
+        61.682987213134766
+      ],
+      "dimensions": [
+        100,
+        105.25266218185425,
+        46.682987213134766
+      ],
+      "volume": 53358.207341032845
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "main_shell",
+      "parentId": null,
+      "attached": false,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "assembly-world",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "main_shell",
+      "worldReport": {
+        "vertexCount": 2514,
+        "faceCount": 5344,
+        "triangleCount": 5344,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          -50,
+          5.407341480255127,
+          15
+        ],
+        "max": [
+          50,
+          110.66000366210938,
+          61.682987213134766
+        ],
+        "dimensions": [
+          100,
+          105.25266218185425,
+          46.682987213134766
+        ],
+        "volume": 53358.207341032845
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "extrude_borders",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "insert_vertex",
+      "target_weld",
+      "dissolve_edges",
+      "merge_planar_faces",
+      "slice_mesh",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature",
+      "create_part_on_face",
+      "add_part_on_face",
+      "align",
+      "ground",
+      "distribute",
+      "arrange"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 5344,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  },
+  {
+    "revision": 13,
+    "id": "fit_u_lower",
+    "name": "TEST U 조명부 강화 걸쇠",
+    "visible": false,
+    "locked": false,
+    "color": "#e3dfd2",
+    "report": {
+      "vertexCount": 44,
+      "faceCount": 84,
+      "triangleCount": 84,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        61,
+        43,
+        0
+      ],
+      "max": [
+        70,
+        65,
+        17.600000381469727
+      ],
+      "dimensions": [
+        9,
+        22,
+        17.600000381469727
+      ],
+      "volume": 1194.2247604370132
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "fit_u_lower",
+      "parentId": null,
+      "attached": false,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "assembly-world",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "fit_u_lower",
+      "worldReport": {
+        "vertexCount": 44,
+        "faceCount": 84,
+        "triangleCount": 84,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          61,
+          43,
+          0
+        ],
+        "max": [
+          70,
+          65,
+          17.600000381469727
+        ],
+        "dimensions": [
+          9,
+          22,
+          17.600000381469727
+        ],
+        "volume": 1194.2247604370132
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 84,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  },
+  {
+    "revision": 13,
+    "id": "fit_u_tray",
+    "name": "TEST U 하판 강화 걸쇠",
+    "visible": false,
+    "locked": false,
+    "color": "#303239",
+    "report": {
+      "vertexCount": 44,
+      "faceCount": 88,
+      "triangleCount": 88,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        61,
+        43,
+        13
+      ],
+      "max": [
+        70,
+        65,
+        27.600000381469727
+      ],
+      "dimensions": [
+        9,
+        22,
+        14.600000381469727
+      ],
+      "volume": 655.7789940558724
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "fit_u_tray",
+      "parentId": null,
+      "attached": false,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "assembly-world",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "fit_u_tray",
+      "worldReport": {
+        "vertexCount": 44,
+        "faceCount": 88,
+        "triangleCount": 88,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          61,
+          43,
+          13
+        ],
+        "max": [
+          70,
+          65,
+          27.600000381469727
+        ],
+        "dimensions": [
+          9,
+          22,
+          14.600000381469727
+        ],
+        "volume": 655.7789940558724
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 88,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  },
+  {
+    "revision": 13,
+    "id": "fit_u_shell",
+    "name": "TEST U 상판 받이",
+    "visible": false,
+    "locked": false,
+    "color": "#303239",
+    "report": {
+      "vertexCount": 24,
+      "faceCount": 48,
+      "triangleCount": 48,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateFaces": 0,
+      "min": [
+        65.9000015258789,
+        43,
+        15
+      ],
+      "max": [
+        70,
+        65,
+        30
+      ],
+      "dimensions": [
+        4.099998474121094,
+        22,
+        15
+      ],
+      "volume": 1270.8465919266068
+    },
+    "kind": "polygon",
+    "cad": null,
+    "modifiers": null,
+    "part": null,
+    "assembly": {
+      "objectId": "fit_u_shell",
+      "parentId": null,
+      "attached": false,
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "poseSpace": "assembly-world",
+      "worldMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matrixLayout": "column-major; applied to stored model-world points",
+      "rigidRootId": "fit_u_shell",
+      "worldReport": {
+        "vertexCount": 24,
+        "faceCount": 48,
+        "triangleCount": 48,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "min": [
+          65.9000015258789,
+          43,
+          15
+        ],
+        "max": [
+          70,
+          65,
+          30
+        ],
+        "dimensions": [
+          4.099998474121094,
+          22,
+          15
+        ],
+        "volume": 1270.8465919266068
+      },
+      "geometrySpace": "model-world; assembly transform is additional and never baked into source"
+    },
+    "editableOperations": [
+      "set_properties",
+      "delete",
+      "set_pivot",
+      "transform",
+      "resize",
+      "extrude",
+      "inset",
+      "bevel",
+      "chamfer_edges",
+      "chamfer_vertices",
+      "weld",
+      "bridge",
+      "connect_edges",
+      "cap_boundaries",
+      "detach_faces",
+      "split_solid",
+      "mirror",
+      "subdivide",
+      "attach",
+      "boolean",
+      "update_modifiers",
+      "add_part_feature"
+    ],
+    "coordinateSpace": "model",
+    "meshTarget": "result",
+    "facesTruncated": false,
+    "faceDetailLimits": {
+      "faces": 256,
+      "vertices": 4096
+    },
+    "totalFaces": 48,
+    "edgesTruncated": false,
+    "edgeDetailLimit": 512,
+    "verticesTruncated": false,
+    "vertexDetailLimit": 512
+  }
+]

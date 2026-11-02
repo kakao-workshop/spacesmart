@@ -1,0 +1,8 @@
+{
+  "model": "RevU/05_integrated_slot_tray_black.stl",
+  "sampleLayerHeight": 0.12,
+  "firstLayerHeight": 0.2,
+  "crossSectionOffset": 0.06,
+  "meshComponents": 1,
+  "unsupportedStartIslands": []
+}

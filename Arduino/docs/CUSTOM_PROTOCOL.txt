@@ -1,0 +1,36 @@
+SpaceSmart custom tab protocol — firmware 2.2 / Mac app 1.1.0
+
+Transport: existing encrypted BLE write characteristic, or USB serial 115200 baud.
+Service: b72c0001-6e35-4b4f-8ad8-08d90a5c9170
+RX:      b72c0002-6e35-4b4f-8ad8-08d90a5c9170
+UTF-8, LF terminated; at most 95 bytes excluding LF. BLE writes may be fragmented.
+The current Mac bridge sends 20-byte fragments with response, every 2 seconds.
+
+Each of three independent slots is indexed 0, 1 or 2:
+  custom 0 gauge 37.5 |CPU 사용률
+  custom 1 text |네트워크|RX 128KiB|TX 24KiB
+  custom 2 text |메모|설계 작업|진행 중
+  custom 2 clear
+
+gauge: finite percentage from 0 to 100; title required. Display: title, %, horizontal bar.
+text: title required, left and right may be empty. Display: title, lower-left, lower-right.
+clear: clears only the specified slot, including its previous title and values.
+Title/left/right: up to 24 UTF-8 bytes each; no pipe, newline, tab or control characters.
+Malformed commands are rejected without changing the previous slot.
+Slots expire after 10 seconds without a fresh update; their cards become blank.
+Empty cards have no placeholder title or instructions; only received data is displayed.
+No custom slots are persisted on the ESP32. The Mac stores selections in UserDefaults.
+The Mac emits all three selected slots every 2 seconds, including clear for disabled slots.
+Use only one sender at a time; built-in Mac selections overwrite their slots on each update.
+The graph is a percentage bar, matching the Computer tab; it is not a time-history chart.
+
+Mac extension points:
+  firmware/macos/CustomData.swift — source kinds, titles, rendering-independent protocol encoder.
+  firmware/macos/Telemetry.swift  — actual metrics collection.
+  firmware/macos/CustomWindow.swift — user selections.
+New sources can emit either supported payload without changing the firmware UI.
+
+LED testing is deliberately local: Settings → LED test. Bluetooth accepts data records,
+not LED hardware-control commands. Lightbar control uses the separate lamp command allowlist
+in LIGHTBAR_PROTOCOL.txt (firmware2.3+). Rotate to choose; PUSH start/stop; K0 stop and return.
+The 15-second test temporarily uses brightness 20 and restores normal LED behavior.

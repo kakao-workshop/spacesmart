@@ -1,0 +1,42 @@
+SpaceSmart lightbar protocol v1 / firmware2.3 Mac1.2.0
+Existing encrypted BLE RX b72c0002-6e35-4b4f-8ad8-08d90a5c9170; newline UTF-8 <=95bytes.
+New encrypted TX read/notify b72c0003-6e35-4b4f-8ad8-08d90a5c9170; 20-byte chunks,
+newline framing; subscribe after pairing, accumulate bytes before decoding. Max line239bytes.
+No transmit until an encrypted RX write occurred in the connection.
+
+Commands (nonce uint32; nonzero unique per command; last8 deduplicated; never retry a toggle):
+lamp NONCE enable 0|1
+lamp NONCE learn                  (60-second receive-only ID enrollment)
+lamp NONCE id ABCDEF              (6-digit hexadecimal, nonzero)
+lamp NONCE verify 0|1             (user physical verification flag)
+lamp NONCE mark 0|1               (user correction; sends no RF)
+lamp NONCE unknown                (invalidate estimates; sends no RF)
+lamp NONCE toggle
+lamp NONCE bri -15..15            (nonzero relative brightness)
+lamp NONCE temp -15..15           (nonzero relative temperature)
+lamp NONCE brightness 0..15       (0 is minimum, not off)
+lamp NONCE temperature 0..15
+lamp NONCE reset                  (remote long press / default lighting)
+lamp NONCE pair                   (same wire command; explicit pairing workflow)
+lamp NONCE auto REVISION -1|1     (strict expected revision and runtime guards)
+lamp 0 ack BOOT EVENT             (ack only after durable storage)
+
+Reply: la NONCE ACCEPTED REASON REVISION
+ACCEPTED means ESP32 accepted command, NEVER confirms lamp receipt.
+Recent duplicate nonce replies duplicate; they do not retransmit. Error codes include
+setup_required, busy, auto_paused, limit, invalid_command. No control via PC telemetry commands.
+
+Status every ~4s while events replay, otherwise ~2s:
+ls BOOT UPTIME_MS ID ENABLED RADIO VERIFIED POWER BRIGHTNESS TEMPERATURE REVISION BUSY LUX PRESENT MANUAL_HOLD_SECONDS TX_COUNT RX_COUNT DROPPED LEARNING
+Power -1/0/1, level -1 unknown or0..15, lux-1 unknown. Bool fields0/1.
+
+Event (replay until ACK):
+le BOOT EVENT ID AGE_MS SOURCE FLAGS LUX_BEFORE LUX_AFTER SPREAD_BEFORE SPREAD_AFTER B0 B1 T0 T1 P0 P1 DURATION_MS
+SOURCE 0 device,1 Mac manual,2 original remote,3 automatic.
+FLAGS bits1 bad pre-samples,2 bad post,4 unknown levels,8 color changed,16 power not on
+both sides,32 unstable lux,64 automatic,128 not physically verified,256 interrupted,
+512 previous boot (age unknown). Mac adds1024 for events preceding selected profile.
+Only flags0 qualifies for preference learning, subject to additional statistical checks.
+Events bounded32 in NVS; overflow drops oldest. Current boot ages use unsigned millis subtraction.
+New radio setup starts receive-only, control disabled by default; enabled and ID persist,
+but estimates are unknown after restart and no command is sent automatically.

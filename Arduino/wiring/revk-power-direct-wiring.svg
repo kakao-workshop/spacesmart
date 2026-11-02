@@ -1,0 +1,1260 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="2700" viewBox="0 0 3000 2700" role="img" aria-labelledby="title desc">
+<title id="title">RevK 전원 분배 만능기판과 ESP32 신호 직결 배선도</title>
+<desc id="desc">최신 RevK 배치에 따라 왼쪽 ESP32, 오른쪽 전원 전용 만능기판, 후면 센서와 USB-C 입력, 전면 LCD와 RF, 하부 LED를 배치. 전원은 5V 3.3V GND 3레일, 신호는 만능기판을 거치지 않는다. 3.3V 공급용량과 LCD 및 YL-105 전원은 확인 전 조건부이다.</desc>
+<rect width="100%" height="100%" fill="#FAFBFC"/>
+<text x="60" y="55.239999999999995" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#278091">SPACE SMART   /   REV K WIRING</text>
+<text x="60" y="125.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="49" text-anchor="start" fill="#20333E">전원은 만능기판으로 분배 · 신호는 ESP32로 직결</text>
+<text x="60" y="173.0" font-family="Arial Unicode MS, Arial, sans-serif" font-size="25" text-anchor="start" fill="#61717B">최종 RevK 배치 기준  /  ESP32는 기존 왼쪽 홀더  /  오른쪽 브레드보드 자리를 전원 분배판으로 교체</text>
+<text x="2940" y="60.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="end" fill="#61717B">2026.10.26  ·  LED 8+1 배정</text>
+<rect x="60" y="208" width="2880" height="70" rx="8" fill="#EEF3F5"/>
+<polyline points="88.00,242.00 142.00,242.00" fill="none" stroke="#C74442" stroke-width="5" stroke-linejoin="round"/>
+<text x="156" y="249.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="start" fill="#C74442">5V</text>
+<polyline points="310.00,242.00 364.00,242.00" fill="none" stroke="#B17B12" stroke-width="5" stroke-linejoin="round"/>
+<text x="378" y="249.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="start" fill="#B17B12">3.3V</text>
+<polyline points="540.00,242.00 594.00,242.00" fill="none" stroke="#56636D" stroke-width="5" stroke-linejoin="round"/>
+<text x="608" y="249.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="start" fill="#56636D">GND</text>
+<polyline points="790.00,242.00 844.00,242.00" fill="none" stroke="#2575AE" stroke-width="5" stroke-linejoin="round"/>
+<text x="858" y="249.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="start" fill="#2575AE">신호 직결</text>
+<text x="1140" y="250.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="start" fill="#61717B">● = 접속   /   점 없는 교차 = 비접속   /   점선 = 전원·회로 확인 후 연결</text>
+<text x="60" y="338.28" font-family="Arial Unicode MS, Arial, sans-serif" font-size="31" text-anchor="start" fill="#20333E">01  케이스 위에서 본 배치</text>
+<text x="60" y="375.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">상판 제거 · 핀면이 위로 향한 ESP32 · 선은 전선 묶음의 경로를 표시</text>
+<rect x="170.0" y="423.0" width="1080.0" height="1195.128" rx="46" fill="#F0F3F5" stroke="#899EA9" stroke-width="3"/>
+<text x="710.0" y="414.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="middle" fill="#61717B">뒤쪽 / USB · 센서</text>
+<text x="710.0" y="1661.2479999999998" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="middle" fill="#61717B">앞쪽 / LCD · 노브</text>
+<rect x="259.64" y="459.288" width="306.72" height="685.8000000000001" rx="10" fill="#DCE8E9" stroke="#4C6F77" stroke-width="2.3"/>
+<text x="413.0" y="596.568" font-family="Arial Unicode MS, Arial, sans-serif" font-size="31" text-anchor="middle" fill="#20333E">ESP32-S3</text>
+<text x="413.0" y="635.408" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="middle" fill="#61717B">HW678</text>
+<text x="413.0" y="676.648" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">핀 위 / 부품 아래</text>
+<rect x="319.64" y="441.288" width="65" height="42" rx="4" fill="#BAC8D0" stroke="#647C8A" stroke-width="1.5"/>
+<rect x="449.64" y="441.288" width="65" height="42" rx="4" fill="#BAC8D0" stroke="#647C8A" stroke-width="1.5"/>
+<text x="413.0" y="521.888" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">USB 2포트 → 후면</text>
+<circle cx="278.64" cy="529.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="555.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="581.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="607.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="633.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="659.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="685.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="711.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="737.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="763.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="789.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="815.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="841.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="867.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="893.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="919.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="945.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="971.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="997.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="1023.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="1049.288" r="4" fill="#B38C42"/>
+<circle cx="278.64" cy="1075.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="529.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="555.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="581.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="607.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="633.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="659.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="685.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="711.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="737.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="763.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="789.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="815.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="841.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="867.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="893.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="919.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="945.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="971.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="997.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="1023.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="1049.288" r="4" fill="#B38C42"/>
+<circle cx="547.36" cy="1075.288" r="4" fill="#B38C42"/>
+<text x="413.0" y="1073.5680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#B17B12">3V3 → 전원판 *</text>
+<text x="413.0" y="1109.5680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#C74442">5Vin ← 전원판</text>
+<text x="413.0" y="1143.5680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#56636D">GND ↔ 전원판</text>
+<rect x="666.8" y="662.328" width="486.00000000000006" height="324.0" rx="9" fill="#F1E5CB" stroke="#AA936A" stroke-width="2"/>
+<circle cx="681.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="681.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="707.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="733.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="759.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="785.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="811.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="837.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="863.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="889.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="915.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="941.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="967.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="993.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1019.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1045.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1071.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1097.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="677.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="703.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="729.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="755.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="781.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="807.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="833.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="859.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="885.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="911.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="937.328" r="3.1" fill="#C5AC7D"/>
+<circle cx="1123.8" cy="963.328" r="3.1" fill="#C5AC7D"/>
+<rect x="784.8" y="674.328" width="250.0" height="35" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="701.968" font-family="Arial Unicode MS, Arial, sans-serif" font-size="28" text-anchor="middle" fill="#20333E">전원 전용 만능기판</text>
+<rect x="825.05" y="713.328" width="169.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="734.808" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#61717B">45 × 30 mm 제안</text>
+<polyline points="701.80,780.33 1117.80,780.33" fill="none" stroke="#C74442" stroke-width="6" stroke-linejoin="round"/>
+<rect x="890.55" y="765.328" width="38.5" height="30" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="788.568" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#C74442">5V</text>
+<polyline points="701.80,842.33 1117.80,842.33" fill="none" stroke="#B17B12" stroke-width="6" stroke-linejoin="round"/>
+<rect x="880.8" y="827.328" width="58.0" height="30" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="850.568" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#B17B12">3.3V</text>
+<polyline points="701.80,904.33 1117.80,904.33" fill="none" stroke="#56636D" stroke-width="6" stroke-linejoin="round"/>
+<rect x="879.3" y="889.328" width="61.0" height="30" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="912.568" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#56636D">GND</text>
+<rect x="732.6800000000001" y="459.828" width="235.44000000000003" height="145.8" rx="8" fill="#FFFFFF" stroke="#147E6E" stroke-width="2"/>
+<text x="850.4000000000001" y="496.70799999999997" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">SCD40</text>
+<text x="850.4000000000001" y="525.548" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">후면 통풍 구획</text>
+<rect x="1009.7" y="454.42799999999994" width="178.20000000000002" height="178.20000000000002" rx="8" fill="#FFFFFF" stroke="#147E6E" stroke-width="2"/>
+<text x="1098.8" y="491.30799999999994" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">VEML7700</text>
+<text x="1098.8" y="520.1479999999999" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">상부 광창</text>
+<rect x="758.6800000000001" y="549.828" width="183.44000000000003" height="46" rx="4" fill="#FCEAE7" stroke="#C74442" stroke-width="1.5"/>
+<text x="850.4000000000001" y="574.908" font-family="Arial Unicode MS, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#C74442">USB-C 입력 ↓ 아래층</text>
+<rect x="754.8000000000001" y="632.8079999999999" width="148" height="19" rx="3" fill="#FFFFFF" stroke="#6B8795" stroke-width="2"/>
+<text x="918.8000000000001" y="647.5279999999999" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="start" fill="#61717B">공통 출구</text>
+<rect x="219.68" y="1402.1280000000002" width="980.64" height="143" rx="8" fill="#FFFFFF" stroke="#246CB2" stroke-width="2"/>
+<text x="710.0" y="1439.0080000000003" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">LCD + EC11 + K0</text>
+<text x="710.0" y="1467.8480000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">기존 경사 전면 · 헤더는 왼쪽</text>
+<rect x="904.4000000000001" y="1331.9279999999999" width="237.60000000000002" height="80" rx="8" fill="#FFFFFF" stroke="#C37136" stroke-width="2"/>
+<text x="1023.2" y="1368.808" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">LD2410C</text>
+<text x="1023.2" y="1397.648" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">우측 전면</text>
+<rect x="342.8" y="1155.888" width="529.2" height="87" rx="8" fill="#FFFFFF" stroke="#7E5BA6" stroke-width="2"/>
+<text x="607.4000000000001" y="1192.768" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">nRF24 + YL-105</text>
+<text x="607.4000000000001" y="1221.608" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">결합한 채 좌우로 세움 · 핀은 앞쪽</text>
+<rect x="575.0" y="970.128" width="270.0" height="162.0" rx="8" fill="#D9E2E6" stroke="#6F8996" stroke-width="2"/>
+<text x="710.0" y="1026.1280000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="25" text-anchor="middle" fill="#20333E">하부 배선구</text>
+<text x="710.0" y="1062.3680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#61717B">25 × 15 mm</text>
+<text x="710.0" y="1099.728" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">전선 통과용</text>
+<polyline points="843.68,590.83 843.68,616.81 861.80,616.81 861.80,775.33 1107.80,775.33" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="843.68,590.83 843.68,616.81 861.80,616.81 861.80,775.33 1107.80,775.33" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="853.68,600.83 853.68,626.81 871.80,626.81 871.80,785.33 1117.80,785.33" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="853.68,600.83 853.68,626.81 871.80,626.81 871.80,785.33 1117.80,785.33" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="716.80,837.33 716.80,665.81 828.80,665.81 828.80,614.63 764.68,614.63 764.68,600.63" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="716.80,837.33 716.80,665.81 828.80,665.81 828.80,614.63 764.68,614.63 764.68,600.63" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="726.80,847.33 726.80,675.81 838.80,675.81 838.80,624.63 774.68,624.63 774.68,610.63" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="726.80,847.33 726.80,675.81 838.80,675.81 838.80,624.63 774.68,624.63 774.68,610.63" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1087.80,837.33 1087.80,681.81 844.80,681.81 844.80,655.63 1074.70,655.63 1074.70,627.63" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1087.80,837.33 1087.80,681.81 844.80,681.81 844.80,655.63 1074.70,655.63 1074.70,627.63" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1097.80,847.33 1097.80,691.81 854.80,691.81 854.80,665.63 1084.70,665.63 1084.70,637.63" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1097.80,847.33 1097.80,691.81 854.80,691.81 854.80,665.63 1084.70,665.63 1084.70,637.63" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<rect x="1037.7" y="665.6279999999999" width="110.5" height="26" rx="3" fill="#FAFBFC"/>
+<text x="1042.7" y="685.348" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="start" fill="#61717B">아래로 우회</text>
+<polyline points="701.80,780.33 631.80,780.33 631.80,1090.09 566.36,1090.09" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="701.80,780.33 631.80,780.33 631.80,1090.09 566.36,1090.09" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="566.36,1055.09 610.80,1055.09 610.80,842.33 701.80,842.33" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="566.36,1055.09 610.80,1055.09 610.80,842.33 701.80,842.33" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8"/>
+<polyline points="701.80,904.33 651.80,904.33 651.80,1125.09 566.36,1125.09" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="701.80,904.33 651.80,904.33 651.80,1125.09 566.36,1125.09" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1112.80,775.33 1179.80,775.33 1179.80,1364.93 1137.00,1364.93" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1112.80,775.33 1179.80,775.33 1179.80,1364.93 1137.00,1364.93" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1122.80,785.33 1189.80,785.33 1189.80,1374.93 1147.00,1374.93" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1122.80,785.33 1189.80,785.33 1189.80,1374.93 1147.00,1374.93" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1082.80,775.33 1161.80,775.33 1161.80,1265.89 822.00,1265.89 822.00,1237.89" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1082.80,775.33 1161.80,775.33 1161.80,1265.89 822.00,1265.89 822.00,1237.89" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8"/>
+<polyline points="1092.80,785.33 1171.80,785.33 1171.80,1275.89 832.00,1275.89 832.00,1247.89" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1092.80,785.33 1171.80,785.33 1171.80,1275.89 832.00,1275.89 832.00,1247.89" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="746.80,837.33 746.80,1040.33 1185.00,1040.33 1185.00,1502.13 1195.32,1502.13" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="746.80,837.33 746.80,1040.33 1185.00,1040.33 1185.00,1502.13 1195.32,1502.13" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8"/>
+<polyline points="756.80,847.33 756.80,1050.33 1195.00,1050.33 1195.00,1512.13 1205.32,1512.13" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="756.80,847.33 756.80,1050.33 1195.00,1050.33 1195.00,1512.13 1205.32,1512.13" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="566.36,733.29 598.36,733.29 598.36,648.81 792.80,648.81 792.80,613.63 933.12,613.63 933.12,605.63" fill="none" stroke="#FAFBFC" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="566.36,733.29 598.36,733.29 598.36,648.81 792.80,648.81 792.80,613.63 933.12,613.63 933.12,605.63" fill="none" stroke="#2575AE" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="792.80,648.81 792.80,639.63 1159.90,639.63 1159.90,632.63" fill="none" stroke="#FAFBFC" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="792.80,648.81 792.80,639.63 1159.90,639.63 1159.90,632.63" fill="none" stroke="#2575AE" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="792.8000000000001" cy="648.8079999999999" r="5" fill="#2575AE"/>
+<rect x="597.36" y="696.288" width="218.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="602.36" y="717.768" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#2575AE">SDA·SCL × 2 → Y분기</text>
+<polyline points="506.36,1145.09 506.36,1133.89 577.80,1133.89 577.80,1155.89" fill="none" stroke="#FAFBFC" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="506.36,1145.09 506.36,1133.89 577.80,1133.89 577.80,1155.89" fill="none" stroke="#2575AE" stroke-width="5" stroke-linejoin="round"/>
+<rect x="347.8" y="1096.888" width="151.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="352.8" y="1118.368" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#2575AE">SPI 신호 5가닥</text>
+<polyline points="566.36,965.09 576.36,965.09 576.36,1312.93 984.40,1312.93 984.40,1331.93" fill="none" stroke="#FAFBFC" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="566.36,965.09 576.36,965.09 576.36,1312.93 984.40,1312.93 984.40,1331.93" fill="none" stroke="#2575AE" stroke-width="5" stroke-linejoin="round"/>
+<rect x="1004.4000000000001" y="1282.9279999999999" width="125.5" height="27" rx="3" fill="#FAFBFC"/>
+<text x="1009.4000000000001" y="1303.5279999999998" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#2575AE">TX·RX 2가닥</text>
+<polyline points="259.64,945.09 220.64,945.09 220.64,1462.13 219.68,1462.13" fill="none" stroke="#FAFBFC" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="259.64,945.09 220.64,945.09 220.64,1462.13 219.68,1462.13" fill="none" stroke="#2575AE" stroke-width="5" stroke-linejoin="round"/>
+<rect x="177.0" y="1267.888" width="159.0" height="28" rx="3" fill="#FAFBFC"/>
+<text x="182.0" y="1289.368" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#2575AE">LCD 신호 9가닥</text>
+<polyline points="1039.80,780.33 1039.80,1026.33 817.00,1026.33 817.00,1035.13" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1039.80,780.33 1039.80,1026.33 817.00,1026.33 817.00,1035.13" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1047.80,842.33 1047.80,1034.33 825.00,1034.33 825.00,1035.13" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1047.80,842.33 1047.80,1034.33 825.00,1034.33 825.00,1035.13" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1055.80,904.33 1055.80,1042.33 833.00,1042.33 833.00,1035.13" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1055.80,904.33 1055.80,1042.33 833.00,1042.33 833.00,1035.13" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="566.36,995.09 595.00,995.09 595.00,1110.13" fill="none" stroke="#FAFBFC" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="566.36,995.09 595.00,995.09 595.00,1110.13" fill="none" stroke="#2575AE" stroke-width="5" stroke-linejoin="round"/>
+<rect x="1275" y="987.128" width="73.0" height="28" rx="3" fill="#FAFBFC"/>
+<text x="1280" y="1008.6080000000001" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#278091">하부로</text>
+<rect x="1275" y="1022.1280000000002" width="69.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="1280" y="1043.6080000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#278091">전원 3</text>
+<rect x="1275" y="1057.1280000000002" width="69.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="1280" y="1078.6080000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#278091">신호 2</text>
+<rect x="784.8" y="674.328" width="250.0" height="35" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="701.968" font-family="Arial Unicode MS, Arial, sans-serif" font-size="28" text-anchor="middle" fill="#20333E">전원 전용 만능기판</text>
+<rect x="825.05" y="713.328" width="169.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="734.808" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#61717B">45 × 30 mm 제안</text>
+<rect x="890.55" y="765.328" width="38.5" height="30" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="788.568" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#C74442">5V</text>
+<rect x="880.8" y="827.328" width="58.0" height="30" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="850.568" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#B17B12">3.3V</text>
+<rect x="879.3" y="889.328" width="61.0" height="30" rx="3" fill="#FAFBFC"/>
+<text x="909.8" y="912.568" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#56636D">GND</text>
+<rect x="639.0" y="1001.128" width="142.0" height="32" rx="3" fill="#FAFBFC"/>
+<text x="710.0" y="1026.1280000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="25" text-anchor="middle" fill="#20333E">하부 배선구</text>
+<rect x="643.5" y="1039.1280000000002" width="133.0" height="30" rx="3" fill="#FAFBFC"/>
+<text x="710.0" y="1062.3680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#61717B">25 × 15 mm</text>
+<rect x="652.25" y="1079.1280000000002" width="115.5" height="27" rx="3" fill="#FAFBFC"/>
+<text x="710.0" y="1099.728" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">전선 통과용</text>
+<rect x="337.5" y="1052.0880000000002" width="151.0" height="28" rx="3" fill="#FAFBFC"/>
+<text x="413.0" y="1073.5680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#B17B12">3V3 → 전원판 *</text>
+<rect x="342.25" y="1088.0880000000002" width="141.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="413.0" y="1109.5680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#C74442">5Vin ← 전원판</text>
+<rect x="339.75" y="1122.0880000000002" width="146.5" height="28" rx="3" fill="#FAFBFC"/>
+<text x="413.0" y="1143.5680000000002" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="middle" fill="#56636D">GND ↔ 전원판</text>
+<text x="60" y="1714.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">배선 경로는 제안입니다. 조도센서는 RevK의 옆 통로 → 앞 공통 출구를 이용합니다.</text>
+<text x="60" y="1750.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">기판은 낮게 고정하고 전선은 옆으로 정리합니다. ESP32를 기판 위에 쌓지 않습니다.</text>
+<text x="60" y="1827.28" font-family="Arial Unicode MS, Arial, sans-serif" font-size="31" text-anchor="start" fill="#20333E">02  하부 LED 받침 · 배선구 아래로 분리</text>
+<rect x="70" y="1852" width="1335" height="432" rx="18" fill="#F0F4F5" stroke="#CED8DD" stroke-width="2"/>
+<text x="95" y="1891.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#61717B">스트립 8개 + 신호등 1개 · 각 3핀 · 5V/GND 병렬 분배 · 시프터 유지</text>
+<rect x="400" y="1940" width="360" height="174" rx="8" fill="#FFFFFF" stroke="#278091" stroke-width="2"/>
+<text x="580.0" y="1976.88" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">Pixel Shifter</text>
+<text x="580.0" y="2005.72" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">V / G / DAT / CLK</text>
+<polyline points="435.00,1915.00 435.00,1940.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="435.00,1915.00 435.00,1940.00" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round"/>
+<rect x="412.5" y="1895" width="45.0" height="24" rx="3" fill="#FAFBFC"/>
+<text x="435" y="1912.96" font-family="Arial Unicode MS, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#B17B12">3.3V</text>
+<polyline points="515.00,1915.00 515.00,1940.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="515.00,1915.00 515.00,1940.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<rect x="491.0" y="1895" width="48.0" height="24" rx="3" fill="#FAFBFC"/>
+<text x="515" y="1912.96" font-family="Arial Unicode MS, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="610.00,1915.00 610.00,1940.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="610.00,1915.00 610.00,1940.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<rect x="579.25" y="1895" width="61.5" height="24" rx="3" fill="#FAFBFC"/>
+<text x="610" y="1912.96" font-family="Arial Unicode MS, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#2575AE">GPIO6</text>
+<polyline points="710.00,1915.00 710.00,1940.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="710.00,1915.00 710.00,1940.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<rect x="674.5" y="1895" width="71.0" height="24" rx="3" fill="#FAFBFC"/>
+<text x="710" y="1912.96" font-family="Arial Unicode MS, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#2575AE">GPIO42</text>
+<rect x="95" y="2138" width="440" height="103" rx="8" fill="#FFFFFF" stroke="#278091" stroke-width="2"/>
+<text x="315.0" y="2174.88" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">LED 스트립 8개 · GPIO6</text>
+<text x="315.0" y="2203.72" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">+5V / DIN / GND</text>
+<rect x="940" y="2138" width="420" height="103" rx="8" fill="#FFFFFF" stroke="#278091" stroke-width="2"/>
+<text x="1150.0" y="2174.88" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">신호등 1개 · GPIO42</text>
+<text x="1150.0" y="2203.72" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">+5V / DIN / GND</text>
+<polyline points="400.00,2042.00 315.00,2042.00 315.00,2138.00" fill="none" stroke="#FAFBFC" stroke-width="9" stroke-linejoin="round"/>
+<polyline points="400.00,2042.00 315.00,2042.00 315.00,2138.00" fill="none" stroke="#2575AE" stroke-width="4" stroke-linejoin="round"/>
+<rect x="110" y="2003" width="177.0" height="28" rx="3" fill="#FAFBFC"/>
+<text x="115" y="2024.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#2575AE">D5 → 330Ω → DIN</text>
+<polyline points="760.00,2042.00 1120.00,2042.00 1120.00,2138.00" fill="none" stroke="#FAFBFC" stroke-width="9" stroke-linejoin="round"/>
+<polyline points="760.00,2042.00 1120.00,2042.00 1120.00,2138.00" fill="none" stroke="#2575AE" stroke-width="4" stroke-linejoin="round"/>
+<rect x="900" y="2003" width="197.0" height="28" rx="3" fill="#FAFBFC"/>
+<text x="905" y="2024.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#2575AE">C5 → 330Ω → DATA</text>
+<polyline points="865.00,1907.00 865.00,2072.00 475.00,2072.00 475.00,2133.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="865.00,1907.00 865.00,2072.00 475.00,2072.00 475.00,2133.00" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="875.00,1917.00 875.00,2082.00 485.00,2082.00 485.00,2143.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="875.00,1917.00 875.00,2082.00 485.00,2082.00 485.00,2143.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="865.00,2072.00 1285.00,2072.00 1285.00,2133.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="865.00,2072.00 1285.00,2072.00 1285.00,2133.00" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="875.00,2082.00 1295.00,2082.00 1295.00,2143.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="875.00,2082.00 1295.00,2082.00 1295.00,2143.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="865" cy="2072" r="5" fill="#C74442"/>
+<circle cx="875" cy="2082" r="5" fill="#56636D"/>
+<rect x="898" y="1919" width="241.5" height="29" rx="3" fill="#FAFBFC"/>
+<text x="903" y="1941.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#C74442">5V / GND는 전원판에서</text>
+<text x="560" y="2189.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">!D5 미사용</text>
+<text x="560" y="2224.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#61717B">전원 단자 근처 콘덴서</text>
+<text x="560" y="2256.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#61717B">+5V–GND / 극성 확인</text>
+<text x="1515" y="338.28" font-family="Arial Unicode MS, Arial, sans-serif" font-size="31" text-anchor="start" fill="#20333E">03  만능기판 전원 분배 확대</text>
+<text x="1515" y="375.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">세 줄만 서로 독립적으로 연결 · 신호선은 이 기판에 연결하지 않음</text>
+<rect x="1560" y="405" width="460" height="91" rx="8" fill="#FFFFFF" stroke="#C74442" stroke-width="2"/>
+<text x="1790.0" y="441.88" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">후면 USB-C 입력보드</text>
+<text x="1790.0" y="470.72" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">V = 5V / G = GND</text>
+<rect x="2330" y="405" width="570" height="91" rx="8" fill="#FFFFFF" stroke="#B17B12" stroke-width="2"/>
+<text x="2615.0" y="441.88" font-family="Arial Unicode MS, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#20333E">ESP32의 3V3 출력 *</text>
+<text x="2615.0" y="470.72" font-family="Arial Unicode MS, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#61717B">보드 전원 용량을 확인한 뒤 연결</text>
+<rect x="1555" y="570" width="1350" height="270" rx="12" fill="#F1E5CB" stroke="#AA936A" stroke-width="2"/>
+<circle cx="1577" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1577" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1603" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1629" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1655" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1681" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1707" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1733" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1759" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1785" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1811" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1837" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1863" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1889" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1915" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1941" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1967" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="1993" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2019" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2045" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2071" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2097" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2123" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2149" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2175" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2201" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2227" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2253" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2279" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2305" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2331" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2357" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2383" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2409" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2435" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2461" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2487" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2513" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2539" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2565" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2591" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2617" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2643" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2669" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2695" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2721" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2747" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2773" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2799" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2825" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2851" cy="826" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="592" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="618" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="644" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="670" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="696" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="722" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="748" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="774" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="800" r="2.6" fill="#C5AC7D"/>
+<circle cx="2877" cy="826" r="2.6" fill="#C5AC7D"/>
+<polyline points="1580.00,615.00 2880.00,615.00" fill="none" stroke="#C74442" stroke-width="6" stroke-linejoin="round"/>
+<rect x="1572" y="576" width="38.5" height="30" rx="3" fill="#FAFBFC"/>
+<text x="1577" y="599.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#C74442">5V</text>
+<polyline points="1580.00,705.00 2880.00,705.00" fill="none" stroke="#B17B12" stroke-width="6" stroke-linejoin="round"/>
+<rect x="1572" y="666" width="58.0" height="30" rx="3" fill="#FAFBFC"/>
+<text x="1577" y="689.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#B17B12">3.3V</text>
+<polyline points="1580.00,795.00 2880.00,795.00" fill="none" stroke="#56636D" stroke-width="6" stroke-linejoin="round"/>
+<rect x="1572" y="756" width="61.0" height="30" rx="3" fill="#FAFBFC"/>
+<text x="1577" y="779.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#56636D">GND</text>
+<polyline points="1680.00,496.00 1680.00,615.00" fill="none" stroke="#FAFBFC" stroke-width="9" stroke-linejoin="round"/>
+<polyline points="1680.00,496.00 1680.00,615.00" fill="none" stroke="#C74442" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="1680" cy="615" r="5" fill="#C74442"/>
+<polyline points="1920.00,496.00 1920.00,795.00" fill="none" stroke="#FAFBFC" stroke-width="9" stroke-linejoin="round"/>
+<polyline points="1920.00,496.00 1920.00,795.00" fill="none" stroke="#56636D" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="1920" cy="795" r="5" fill="#56636D"/>
+<polyline points="2615.00,496.00 2615.00,705.00" fill="none" stroke="#FAFBFC" stroke-width="9" stroke-linejoin="round"/>
+<polyline points="2615.00,496.00 2615.00,705.00" fill="none" stroke="#B17B12" stroke-width="4" stroke-linejoin="round" stroke-dasharray="9 8"/>
+<circle cx="2615" cy="705" r="5" fill="#B17B12"/>
+<rect x="1560" y="920" width="177" height="171" rx="9" fill="#FFFFFF" stroke="#CED8DD" stroke-width="1.5"/>
+<text x="1648.5" y="956.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#20333E">ESP32</text>
+<text x="1648.5" y="994.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">5Vin</text>
+<text x="1648.5" y="1033.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="1607.00,615.00 1607.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1607.00,615.00 1607.00,920.00" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1607" cy="615" r="5" fill="#C74442"/>
+<circle cx="1607" cy="920" r="7" fill="#FFFFFF" stroke="#C74442" stroke-width="2.4"/>
+<polyline points="1690.00,795.00 1690.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1690.00,795.00 1690.00,920.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1690" cy="795" r="5" fill="#56636D"/>
+<circle cx="1690" cy="920" r="7" fill="#FFFFFF" stroke="#56636D" stroke-width="2.4"/>
+<text x="1648.5" y="1071.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">2가닥</text>
+<rect x="1753" y="920" width="177" height="171" rx="9" fill="#FFFFFF" stroke="#CED8DD" stroke-width="1.5"/>
+<text x="1841.5" y="956.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#20333E">LCD *</text>
+<text x="1841.5" y="994.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">VCC</text>
+<text x="1841.5" y="1033.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="1800.00,705.00 1800.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1800.00,705.00 1800.00,920.00" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8"/>
+<circle cx="1800" cy="705" r="5" fill="#B17B12"/>
+<circle cx="1800" cy="920" r="7" fill="#FFFFFF" stroke="#B17B12" stroke-width="2.4"/>
+<polyline points="1883.00,795.00 1883.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1883.00,795.00 1883.00,920.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1883" cy="795" r="5" fill="#56636D"/>
+<circle cx="1883" cy="920" r="7" fill="#FFFFFF" stroke="#56636D" stroke-width="2.4"/>
+<text x="1841.5" y="1071.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">2가닥</text>
+<rect x="1946" y="920" width="177" height="171" rx="9" fill="#FFFFFF" stroke="#CED8DD" stroke-width="1.5"/>
+<text x="2034.5" y="956.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#20333E">SCD40</text>
+<text x="2034.5" y="994.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">VDD</text>
+<text x="2034.5" y="1033.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="1993.00,705.00 1993.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1993.00,705.00 1993.00,920.00" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1993" cy="705" r="5" fill="#B17B12"/>
+<circle cx="1993" cy="920" r="7" fill="#FFFFFF" stroke="#B17B12" stroke-width="2.4"/>
+<polyline points="2076.00,795.00 2076.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2076.00,795.00 2076.00,920.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2076" cy="795" r="5" fill="#56636D"/>
+<circle cx="2076" cy="920" r="7" fill="#FFFFFF" stroke="#56636D" stroke-width="2.4"/>
+<text x="2034.5" y="1071.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">2가닥</text>
+<rect x="2139" y="920" width="177" height="171" rx="9" fill="#FFFFFF" stroke="#CED8DD" stroke-width="1.5"/>
+<text x="2227.5" y="956.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#20333E">VEML7700</text>
+<text x="2227.5" y="994.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">VIN</text>
+<text x="2227.5" y="1033.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="2186.00,705.00 2186.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2186.00,705.00 2186.00,920.00" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2186" cy="705" r="5" fill="#B17B12"/>
+<circle cx="2186" cy="920" r="7" fill="#FFFFFF" stroke="#B17B12" stroke-width="2.4"/>
+<polyline points="2269.00,795.00 2269.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2269.00,795.00 2269.00,920.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2269" cy="795" r="5" fill="#56636D"/>
+<circle cx="2269" cy="920" r="7" fill="#FFFFFF" stroke="#56636D" stroke-width="2.4"/>
+<text x="2227.5" y="1071.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">2가닥</text>
+<rect x="2332" y="920" width="177" height="171" rx="9" fill="#FFFFFF" stroke="#CED8DD" stroke-width="1.5"/>
+<text x="2420.5" y="956.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#20333E">LD2410C</text>
+<text x="2420.5" y="994.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">VCC</text>
+<text x="2420.5" y="1033.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="2379.00,615.00 2379.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2379.00,615.00 2379.00,920.00" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2379" cy="615" r="5" fill="#C74442"/>
+<circle cx="2379" cy="920" r="7" fill="#FFFFFF" stroke="#C74442" stroke-width="2.4"/>
+<polyline points="2462.00,795.00 2462.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2462.00,795.00 2462.00,920.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2462" cy="795" r="5" fill="#56636D"/>
+<circle cx="2462" cy="920" r="7" fill="#FFFFFF" stroke="#56636D" stroke-width="2.4"/>
+<text x="2420.5" y="1071.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">2가닥</text>
+<rect x="2525" y="920" width="177" height="171" rx="9" fill="#FFFFFF" stroke="#CED8DD" stroke-width="1.5"/>
+<text x="2613.5" y="956.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#20333E">YL-105 *</text>
+<text x="2613.5" y="994.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">VCC入力</text>
+<text x="2613.5" y="1033.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="2572.00,615.00 2572.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2572.00,615.00 2572.00,920.00" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8"/>
+<circle cx="2572" cy="615" r="5" fill="#C74442"/>
+<circle cx="2572" cy="920" r="7" fill="#FFFFFF" stroke="#C74442" stroke-width="2.4"/>
+<polyline points="2655.00,795.00 2655.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2655.00,795.00 2655.00,920.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2655" cy="795" r="5" fill="#56636D"/>
+<circle cx="2655" cy="920" r="7" fill="#FFFFFF" stroke="#56636D" stroke-width="2.4"/>
+<text x="2613.5" y="1071.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">2가닥</text>
+<rect x="2718" y="920" width="177" height="171" rx="9" fill="#FFFFFF" stroke="#CED8DD" stroke-width="1.5"/>
+<text x="2806.5" y="956.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#20333E">하부 받침</text>
+<text x="2806.5" y="994.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#61717B">5V + 3.3V</text>
+<text x="2806.5" y="1033.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="middle" fill="#56636D">GND</text>
+<polyline points="2747.00,615.00 2747.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2747.00,615.00 2747.00,920.00" fill="none" stroke="#C74442" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2747" cy="615" r="5" fill="#C74442"/>
+<circle cx="2747" cy="920" r="7" fill="#FFFFFF" stroke="#C74442" stroke-width="2.4"/>
+<polyline points="2806.00,705.00 2806.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2806.00,705.00 2806.00,920.00" fill="none" stroke="#B17B12" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2806" cy="705" r="5" fill="#B17B12"/>
+<circle cx="2806" cy="920" r="7" fill="#FFFFFF" stroke="#B17B12" stroke-width="2.4"/>
+<polyline points="2865.00,795.00 2865.00,920.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2865.00,795.00 2865.00,920.00" fill="none" stroke="#56636D" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2865" cy="795" r="5" fill="#56636D"/>
+<circle cx="2865" cy="920" r="7" fill="#FFFFFF" stroke="#56636D" stroke-width="2.4"/>
+<text x="2806.5" y="1071.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#61717B">3가닥</text>
+<text x="1530" y="1148.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">* 3.3V: 기존 ESP 출력 사용안은 용량·발열 확인 전 미확정.</text>
+<text x="1530" y="1183.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">  별도 3.3V 전원으로 바꾸면 ESP 3V3 연결을 빼고 교체합니다. 두 출력을 병렬 연결하지 않습니다.</text>
+<text x="1530" y="1218.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">* LCD: 현재 3.3V 가정. 실제 VCC 정격 확인 후 연결합니다.</text>
+<text x="1530" y="1253.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">* YL-105: 5V 입력 → 3.3V 변환형 확인 시 이 연결. nRF 단독 VCC에는 5V를 넣지 않습니다.</text>
+<text x="1530" y="1308.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#20333E">만능기판은 전압을 바꾸지 않습니다. 5V·3.3V·GND끼리 섞이지 않도록 각각 연결합니다.</text>
+<text x="1530" y="1346.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">LED의 5V·GND 분기는 굵은 전원선으로 구성하고, 납땜면은 하판과 절연합니다.</text>
+<text x="1530" y="1384.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">외부 5V로 구동할 때 ESP32 USB 전원을 동시에 공급하지 않습니다.</text>
+<text x="1515" y="1482.28" font-family="Arial Unicode MS, Arial, sans-serif" font-size="31" text-anchor="start" fill="#20333E">04  ESP32 → 부품 신호 직결</text>
+<text x="1515" y="1520.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">GPIO 번호와 실물 핀 이름 기준 · 단자 순서는 부품 실크로 대조</text>
+<text x="1530" y="1588.76" font-family="Arial Unicode MS, Arial, sans-serif" font-size="27" text-anchor="start" fill="#20333E">LCD · 노브 · 버튼 / 9가닥</text>
+<text x="1530" y="1633.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO12</text>
+<polyline points="1654.00,1626.00 1965.00,1626.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1626.00 1965.00,1626.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1626" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1626" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1633.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">SCL / SPI CLK</text>
+<text x="1530" y="1672.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO11</text>
+<polyline points="1654.00,1665.00 1965.00,1665.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1665.00 1965.00,1665.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1665" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1665" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1672.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">SDA / SPI MOSI</text>
+<text x="1530" y="1711.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO8</text>
+<polyline points="1654.00,1704.00 1965.00,1704.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1704.00 1965.00,1704.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1704" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1704" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1711.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">RES</text>
+<text x="1530" y="1750.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO9</text>
+<polyline points="1654.00,1743.00 1965.00,1743.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1743.00 1965.00,1743.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1743" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1743" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1750.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">DC</text>
+<text x="1530" y="1789.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO10</text>
+<polyline points="1654.00,1782.00 1965.00,1782.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1782.00 1965.00,1782.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1782" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1782" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1789.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">CS</text>
+<text x="1530" y="1828.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO21</text>
+<polyline points="1654.00,1821.00 1965.00,1821.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1821.00 1965.00,1821.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1821" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1821" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1828.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">A</text>
+<text x="1530" y="1867.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO40</text>
+<polyline points="1654.00,1860.00 1965.00,1860.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1860.00 1965.00,1860.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1860" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1860" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1867.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">B</text>
+<text x="1530" y="1906.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO41</text>
+<polyline points="1654.00,1899.00 1965.00,1899.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1899.00 1965.00,1899.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1899" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1899" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1906.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">PUSH</text>
+<text x="1530" y="1945.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO47</text>
+<polyline points="1654.00,1938.00 1965.00,1938.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,1938.00 1965.00,1938.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1654" cy="1938" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="1965" cy="1938" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1983" y="1945.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">K0</text>
+<text x="1530" y="2020.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#61717B">BLK는 회로 확인 전 미결선. GPIO39는 예약만.</text>
+<text x="2250" y="1588.76" font-family="Arial Unicode MS, Arial, sans-serif" font-size="27" text-anchor="start" fill="#20333E">nRF24 + YL-105 / 5가닥</text>
+<text x="2250" y="1633.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO17</text>
+<polyline points="2374.00,1626.00 2690.00,1626.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,1626.00 2690.00,1626.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="1626" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="1626" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="1633.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">CE</text>
+<text x="2250" y="1672.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO16</text>
+<polyline points="2374.00,1665.00 2690.00,1665.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,1665.00 2690.00,1665.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="1665" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="1665" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="1672.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">CSN / CS</text>
+<text x="2250" y="1711.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO14</text>
+<polyline points="2374.00,1704.00 2690.00,1704.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,1704.00 2690.00,1704.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="1704" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="1704" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="1711.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">SCK</text>
+<text x="2250" y="1750.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO13</text>
+<polyline points="2374.00,1743.00 2690.00,1743.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,1743.00 2690.00,1743.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="1743" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="1743" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="1750.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">MOSI</text>
+<text x="2250" y="1789.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO15</text>
+<polyline points="2374.00,1782.00 2690.00,1782.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,1782.00 2690.00,1782.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="1782" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="1782" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="1789.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">MISO</text>
+<text x="2250" y="1836.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#61717B">IRQ는 현재 미사용</text>
+<text x="2250" y="1903.76" font-family="Arial Unicode MS, Arial, sans-serif" font-size="27" text-anchor="start" fill="#20333E">LD2410C / 2가닥</text>
+<text x="2250" y="1948.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO7</text>
+<polyline points="2374.00,1941.00 2690.00,1941.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,1941.00 2690.00,1941.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="1941" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="1941" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="1948.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">TX → ESP RX</text>
+<text x="2250" y="1987.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO18</text>
+<polyline points="2374.00,1980.00 2690.00,1980.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,1980.00 2690.00,1980.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="1980" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="1980" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="1987.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">RX ← ESP TX</text>
+<text x="2250" y="2034.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#61717B">OUT은 현재 미사용</text>
+<text x="2250" y="2133.76" font-family="Arial Unicode MS, Arial, sans-serif" font-size="27" text-anchor="start" fill="#20333E">하부 시프터 / 2가닥</text>
+<text x="2250" y="2178.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO6</text>
+<polyline points="2374.00,2171.00 2690.00,2171.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,2171.00 2690.00,2171.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="2171" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="2171" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="2178.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">DAT → D5</text>
+<text x="2250" y="2217.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO42</text>
+<polyline points="2374.00,2210.00 2690.00,2210.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="2374.00,2210.00 2690.00,2210.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="2374" cy="2210" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<circle cx="2690" cy="2210" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="2708" y="2217.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#20333E">CLK → C5</text>
+<text x="2250" y="2264.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#61717B">CLK를 신호등의 별도 데이터 통로로 사용</text>
+<text x="1530" y="2093.76" font-family="Arial Unicode MS, Arial, sans-serif" font-size="27" text-anchor="start" fill="#20333E">SCD40 + VEML7700 / Y분기</text>
+<text x="1530" y="2147.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO4</text>
+<polyline points="1654.00,2140.00 1740.00,2140.00 1740.00,2115.00 1810.00,2115.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,2140.00 1740.00,2140.00 1740.00,2115.00 1810.00,2115.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1740.00,2140.00 1740.00,2165.00 1810.00,2165.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1740.00,2140.00 1740.00,2165.00 1810.00,2165.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1740" cy="2140" r="5" fill="#2575AE"/>
+<circle cx="1654" cy="2140" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1827" y="2121.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#20333E">SCD40 SDA</text>
+<text x="1827" y="2171.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#20333E">VEML7700 SDA</text>
+<text x="1530" y="2273.24" font-family="Arial Unicode MS, Arial, sans-serif" font-size="23" text-anchor="start" fill="#2575AE">GPIO5</text>
+<polyline points="1654.00,2266.00 1740.00,2266.00 1740.00,2241.00 1810.00,2241.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1654.00,2266.00 1740.00,2266.00 1740.00,2241.00 1810.00,2241.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1740.00,2266.00 1740.00,2291.00 1810.00,2291.00" fill="none" stroke="#FAFBFC" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="1740.00,2266.00 1740.00,2291.00 1810.00,2291.00" fill="none" stroke="#2575AE" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1740" cy="2266" r="5" fill="#2575AE"/>
+<circle cx="1654" cy="2266" r="7" fill="#FFFFFF" stroke="#2575AE" stroke-width="2.4"/>
+<text x="1827" y="2247.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#20333E">SCD40 SCL</text>
+<text x="1827" y="2297.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#20333E">VEML7700 SCL</text>
+<text x="1530" y="2371.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">각 GPIO에서 1→2로 분기한 Y케이블을 만듭니다.</text>
+<text x="1530" y="2405.48" font-family="Arial Unicode MS, Arial, sans-serif" font-size="21" text-anchor="start" fill="#61717B">한 핀에 듀폰 암단자 두 개를 겹쳐 끼우지 않습니다.</text>
+<text x="60" y="2364.64" font-family="Arial Unicode MS, Arial, sans-serif" font-size="28" text-anchor="start" fill="#20333E">제작 기준</text>
+<text x="60" y="2409.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">• 전원 분배판: 약 45 × 30 mm / 독립 패드형 2.54 mm 제안.</text>
+<text x="60" y="2448.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">• 납땜으로 레일을 만들고, 서로 다른 레일 사이 단락을 확인.</text>
+<text x="60" y="2487.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">• ESP32·센서는 기존 홀더 유지. 새 기판 고정·실물 간섭은 미검증.</text>
+<text x="60" y="2526.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">• 하부 5가닥 = 5V · 3.3V · GND + GPIO6 · GPIO42.</text>
+<text x="60" y="2565.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">• 선택 TTP223: 전원판 3.3V/GND + GPIO1 또는 GPIO2 직결.</text>
+<rect x="1515" y="2450" width="1425" height="144" rx="10" fill="#EEF3F5"/>
+<text x="1540" y="2492.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="start" fill="#20333E">선 개수 기준</text>
+<text x="1540" y="2532.12" font-family="Arial Unicode MS, Arial, sans-serif" font-size="24" text-anchor="start" fill="#20333E">주요 부품 끝단: 전원·GND 13가닥 + 신호 22가닥</text>
+<text x="1540" y="2568.6" font-family="Arial Unicode MS, Arial, sans-serif" font-size="20" text-anchor="start" fill="#61717B">입력보드 2가닥 / ESP 전원 연결 3가닥 / 선택 터치·BLK는 위 합계에 별도</text>
+<text x="60" y="2669.36" font-family="Arial Unicode MS, Arial, sans-serif" font-size="22" text-anchor="start" fill="#61717B">기준: RevK CAD 위치·배선 통로 / 사용자 HW678 사진 / 기존 GPIO 핀맵. 연결 검토용 도면이며 실제 통전·발열·전선 묶음 간섭은 미검증.</text>
+</svg>
